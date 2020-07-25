@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "seja-eterno": {
+      "hosting": {
+        "sejaeterno": [
+          "seja-eterno"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+
+          <nav class="navbar fixed-top navbar-dark bg-info navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/logosejaeterno.png" width="230" height="90" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Página inicial <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/artigos" routerLinkActive="active">Artigos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/videos" routerLinkActive="active">Videos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLink="/estudos" routerLinkActive="active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Estudos Bíblicos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" routerLink="/estudos" routerLinkActive="active">Livros Bíblicos</a>
+                  <a class="dropdown-item" routerLink="/estudos" routerLinkActive="active">Outros Estudos Bíblicos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item"  routerLink="/estudos" routerLinkActive="active">Estudos por Títulos ou temas</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  routerLink="/parceiros" routerLinkActive="active">Parceiros</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link"  routerLink="/sobre" routerLinkActive="active">Sobre Nós</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+            </form>
+          </div>
+          </nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+
+</div>
+
+
