@@ -4,3 +4,16 @@
 element.style{
   margin-top: 120px;
 }
+body{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/seja-eterno.appspot.com/o/fundo.jpg?alt=media&token=77af61e4-da38-41da-9b39-743db1432ea3);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+h3{
+  color: white;
+}
+
+h2{
+  color: floralwhite;
+
+}

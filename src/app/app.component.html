@@ -1,40 +1,40 @@
-
-          <nav class="navbar fixed-top navbar-dark bg-info navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="#">
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-dark bg-info">
+    <a class="navbar-brand" routerLink="/">
               <img src="assets/img/logosejaeterno.png" width="230" height="90" class="d-inline-block align-top" alt="" loading="lazy">
                 </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+                  &#9776;
+                </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" routerLink="/home" routerLinkActive="active">Página inicial <span class="sr-only">(current)</span></a>
+                <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                <li class="nav-item">
+                  <a class="nav-link" [routerLink]="'/home'" routerLinkActive="active"(click)="isMenuCollapsed = true">Página Inicial</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link"  [routerLink]="'/artigos'" routerLinkActive="active"(click)="isMenuCollapsed = true">Artigos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="/artigos" routerLinkActive="active">Artigos</a>
+                <a class="nav-link"  [routerLink]="'/videos'" routerLinkActive="active"(click)="isMenuCollapsed = true">Videos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="/videos" routerLinkActive="active">Videos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" routerLink="/estudos" routerLinkActive="active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li class="nav-item dropdown" routerLinkActive="active">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Estudos Bíblicos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" routerLink="/estudos" routerLinkActive="active">Livros Bíblicos</a>
-                  <a class="dropdown-item" routerLink="/estudos" routerLinkActive="active">Outros Estudos Bíblicos</a>
+                  <a class="dropdown-item" [routerLink]="'/estudos'" (click)="isMenuCollapsed = true">Livros Bíblicos</a>
+                  <a class="dropdown-item" [routerLink]="'/estudos'" (click)="isMenuCollapsed = true">Outros Estudos Bíblicos</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item"  routerLink="/estudos" routerLinkActive="active">Estudos por Títulos ou temas</a>
+                  <a class="dropdown-item"  [routerLink]="'/estudos'" (click)="isMenuCollapsed = true">Estudos por Títulos ou temas</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  routerLink="/parceiros" routerLinkActive="active">Parceiros</a>
+                <a class="nav-link"  routerLink="/parceiros" routerLinkActive="active"(click)="isMenuCollapsed = true">Parceiros</a>
               </li>
 
               <li class="nav-item">
-                  <a class="nav-link"  routerLink="/sobre" routerLinkActive="active">Sobre Nós</a>
+                  <a class="nav-link"  routerLink="/sobre" routerLinkActive="active"(click)="isMenuCollapsed = true">Sobre Nós</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

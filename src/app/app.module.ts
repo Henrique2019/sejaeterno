@@ -14,6 +14,8 @@ import { EstudosComponent } from './estudos/estudos.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { CrudComponent } from './componentes/crud/crud.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { CrudComponent } from './componentes/crud/crud.component';
     EstudosComponent,
     ParceirosComponent,
     SobreComponent,
-    CrudComponent,
+
+
 
   ],
   imports: [
@@ -35,6 +38,7 @@ import { CrudComponent } from './componentes/crud/crud.component';
     CarouselModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    NgbModule,
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]

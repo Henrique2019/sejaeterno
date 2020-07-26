@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
      title = 'sejaeterno';
+     public isMenuCollapsed = true;
   }
 
