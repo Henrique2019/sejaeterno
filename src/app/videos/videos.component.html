@@ -1,3 +1,23 @@
-<section _ngcontent-obt-c21 style="margin-top: 110px;" id="videos">
-  <h1>videos</h1>
+<section _ngcontent-obt-c21 style="margin-top: 110px;">
+
+    <form id = " yt-form ">
+        <p> <input type = "text" id = "keyword-input" placeholder = "Digite a palavra-chave" required > </p>
+        <p> <input type = "number" id = "maxresult-input" placeholder = "Resultados máximos" min = "1" max = "50" required > </p>
+        <p>
+            <select id = "pedido-entrada" required >
+                <option value = " "> --SELECIONAR ORDEM-- </option>
+                <option value = "date"> Data </option>
+                <option value = "rating"> Classificação </option>
+                <option value = "relevant"> Relevância </option>
+                <option value = "title"> Título </option>
+                <option value = "viewCount" selected > View Count </option>
+            </select>
+        </p>
+        <p>
+            <input class="btn btn-danger"type="submit" value="Submit">
+        </p>
+    </form>
+ 
+    <div id = "videoListContainer"> </div>
+ 
 </section>

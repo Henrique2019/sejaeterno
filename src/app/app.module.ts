@@ -13,7 +13,6 @@ import { VideosComponent } from './videos/videos.component';
 import { EstudosComponent } from './estudos/estudos.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { SobreComponent } from './sobre/sobre.component';
-import { CrudComponent } from './componentes/crud/crud.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
